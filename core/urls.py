@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('main.urls')),
     path('api/auth/', token_view.obtain_auth_token),
-    path('api/v1/blog/', include('blog.urls'))
+    path('api/v1/blog/', include('blog.urls')),
+    path('test/', include('library.urls'))
 ]

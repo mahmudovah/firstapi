@@ -14,7 +14,6 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = ['id', 'sort', 'num']
 
 class BookSerializer(serializers.ModelSerializer):
-   # price = serializers.
     class Meta:
         author = Author.name
         model = Book
